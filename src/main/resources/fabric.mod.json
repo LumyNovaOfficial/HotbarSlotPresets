@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "hotbarslotpresets",
+  "version": "1.0.0",
+  "name": "HotbarSlotPresets",
+  "description": "Toggle a hotbar slot between two keybinds from the pause menu.",
+  "authors": ["LumyNova"],
+  "license": "LSUL-1.0 (Custom)",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.lumynova.hotbarslotpresets.HotbarSlotPresetsMod"],
+    "modmenu": ["dev.lumynova.hotbarslotpresets.config.ModMenuIntegration"]
+  },
+  "mixins": ["hotbarslotpresets.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "fabric-api": "*",
+    "minecraft": ">=1.21.8 <=1.21.11",
+    "java": ">=21",
+    "yet_another_config_lib_v3": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

@@ -1,0 +1,12 @@
+.gradle/
+build/
+run/
+out/
+logs/
+
+*.class
+*.jar
+*.log
+
+loom-cache/
+hs_err_pid*
